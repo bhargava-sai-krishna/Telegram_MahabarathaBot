@@ -169,7 +169,6 @@ def sub_parva_selector_command(update: Update,context: CallbackContext):
 def queryhandler(update: Update,context: CallbackContext):
     global parva_idn
     global sub_parva_idn
-    
     query=update.callback_query.data
     update.callback_query.answer()
     if(query[0]=='m'):
